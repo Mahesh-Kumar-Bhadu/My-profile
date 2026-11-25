@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahesh Kumar | Video editor and web developer</title>
+  <meta name="description" content="Portfolio of Mahesh Kumar: web projects, skills and video editing work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" id="brand-name">Mahesh Kumar</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#edits">Edits</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="status" id="open-to"><span class="rec-dot" aria-hidden="true"></span><span>Open to internships</span></p>
+        <h1 id="hero-name">Mahesh Kumar</h1>
+        <p class="lead" id="hero-tagline">Loading...</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <figure class="frame">
+        <img id="hero-photo" src="/images/profile.jpg" alt="Portrait of Mahesh Kumar" width="400" height="500">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <figcaption><span class="rec-dot" aria-hidden="true"></span><span id="timecode" aria-hidden="true">00:00:00</span></figcaption>
+      </figure>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div id="about-text" class="prose"></div>
+        <aside>
+          <h3>Education</h3>
+          <div id="education"></div>
+          <h3 class="exp-title">Experience</h3>
+          <div id="experience"></div>
+          <ul class="facts" id="facts"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <p class="section-note">Bar length shows how comfortable I am, not a certificate.</p>
+      <div id="skills-list" class="tracks"></div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div id="projects-list" class="project-list"></div>
+    </section>
+
+    <section id="edits" class="section">
+      <h2>Edits</h2>
+      <p class="section-note">Video and reel work I have cut.</p>
+      <div id="edits-list" class="edit-grid"></div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="prose">
+          <p>Have an internship, a project or an edit in mind? Send a message and I will reply by email.</p>
+          <ul class="links" id="contact-links"></ul>
+        </div>
+        <form id="contact-form" novalidate>
+          <label>Name
+            <input name="name" type="text" autocomplete="name" required minlength="2" maxlength="80">
+          </label>
+          <label>Email
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>Subject (optional)
+            <input name="subject" type="text" maxlength="120">
+          </label>
+          <label>Message
+            <textarea name="message" rows="5" required minlength="10" maxlength="2000"></textarea>
+          </label>
+          <div class="hp" aria-hidden="true"><label>Website<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+          <button class="btn primary" type="submit" id="send-btn">Send message</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Mahesh Kumar. Built with Node.js, Express and MongoDB.</p>
+  </footer>
+
+  <script src="/js/app.js" defer></script>
+</body>
+</html>
